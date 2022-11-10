@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/stylo.css">
+    <title>Formulario</title>
+</head>
+<body>
+
+    <div    class="img">
+        <img src="/Formulario JavaScript/img/buscar-encuesta.png" alt="">
+    </div>
+
+    <form class="formulario">
+      
+    <div id="main">
+
+       
+              <!-- Menu Desplegable -->
+              <div id="sideNavigation" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn"  onclick="cerrar()">&times;</a>
+                
+                      <div id="resp">
+
+
+                      </div>
+                      
+                           
+
+             </div>  
+            <!-- Fin meni -->
+     
+            <h1>Encuesta Escolar</h1>
+            
+            <div class="contenedor-campos">
+                <div class="campos">
+               
+                   
+                    <input id="nombre" name="nombre" type="text" placeholder="Tu nombre" class="input-text" >
+                </div>
+                <div class="campos">
+                
+                    <br>
+                    <input id="apellido" name="apellido" type="text" placeholder="Tu apellido" class="input-text" >
+                </div>
+                <div class="campos">
+                 
+                    <br>
+                    <input id="Edad" type="number"  min="1" max="100" placeholder="Tu Edad" class="input-text">
+                </div>
+                <br>
+                <div class="campos">
+                 
+                    <br>
+                    <select name="sexo" id="sex">
+                        <option value="" disabled selected>Eliga su sexo</option>
+                        <option value="0">Masculino</option>
+                        <option value="1">Femenino</option>
+
+                    </select>
+                
+                </div>
+                <br>
+                <div class="campos">
+                  
+                    <br>
+                    <select name="cursos" id="curs">
+                            <option value="" disabled selected>Seleccione un curso</option>
+                            <option value="6">6°</option>
+                            <option value="7">7°</option>
+                            <option value="8">8°</option>
+                            <option value="9">9°</option>
+                            <option value="10">10°</option>
+                            <option value="11">11°</option>
+                    </select>
+                </div>
+                <br>
+                <div class="campos">
+                   
+                    <br>
+                    <select name="estado" id="esta">
+                        <option value="" disabled selected>Eliga su estado</option>
+                        <option value="1">Casado</option>
+                        <option value="2">Soltero</option>
+                        <option value="3">Divorciado</option>
+                    </select>
+                   
+                   
+                </div>
+                <br>
+                
+                <div class="contenedor-campos">
+                    <br>
+                    <label >¿Es usted población vulnerable?</label>
+                    <label>
+                        <input type="radio" id="Si" name="grupoV"/>
+                        <span>Si</span>
+                    </label>
+                   
+                    <label >
+                        <input type="radio" id="No" name="grupoV">
+                        <span>No</span>
+                    </label>
+                   
+
+                </div>
+
+
+            
+            <br>
+            
+            <div class="campos">
+              
+                <br>
+                <select name="lugar" id="lugar">
+                        <option value="" disabled selected>Seleccione Lugar</option>
+                        <option value="01">La playa</option>
+                        <option value="02">Malambo</option>
+                        <option value="03">Barranquilla</option>
+                        <option value="04">Galapa</option>
+
+                </select>
+            </div>  
+            </div>
+
+            
+
+              
+
+            <br>
+           
+                <!-- Mensaje de salida -->
+            <div id="alerta">  </div>
+          
+            <div>
+                <input type="submit" value="Enviar" class="boton">
+
+                  
+                <input id="btn-menu" type="button" value="Mostrar" class="boton">
+
+                    
+
+                
+            </div>
+     
+
+    </div>    
+</form> 
+   
+ 
+    
+</body>
+<script src="./JS/script.js"></script>
+</html>
